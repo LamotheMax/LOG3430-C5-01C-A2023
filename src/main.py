@@ -11,7 +11,7 @@ print(f.renderText("CCoinBox"))
 def main():
     coinBox = CCoinBox()
     action = True
-    while action is not None:
+    while action is None:
         action = inquirer.select(
             message="Sélectionnez une option:",
             choices=[
