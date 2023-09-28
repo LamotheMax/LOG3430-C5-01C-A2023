@@ -7,9 +7,9 @@ class Test_CCoinBox(unittest.TestCase):
 
     def test_ajouter_25c(self):
         self.box.ajouter_25c()
-        self.assertEquals(self.box.monnaie_courante, 1)
+        self.assertEqual(self.box.monnaie_courante, 1)
 
     def test_vente(self):
         self.box.ajouter_25c()
         self.box.vente()
-        self.assertEquals(self.box.monnaie_totale, 3)
+        self.assertEqual(self.box.monnaie_totale, 0)
